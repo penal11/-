@@ -1,0 +1,39 @@
+#Controller
+from Model import *
+from View import *
+
+def main():
+    while True:
+        choice = display_menu()
+        try:
+            num_3 = int(choice)
+            if num_3 < 5:
+                print("")
+        except ValueError:
+                print("введите нужный индекс")
+
+        if choice == "1":
+            addition(num_1, num_2)
+        elif choice == "2":
+            subtraction(num_1, num_2)
+        elif choice == "3":
+            if num_1 == 0 or num_2 == 0:
+                print("одно из чисел ровняется нулю")
+            else:
+                multiplication(num_1, num_2)
+        elif choice == "4":
+            if num_1 == 0 or num_2 == 0:
+                print("одно из чисел ровняется нулю")
+            else:
+                division(num_1, num_2)
+
+
+
+
+
+
+
+
+
+
+main()
