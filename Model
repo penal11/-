@@ -1,0 +1,18 @@
+# Model (Модель) - отвечает за данные и логику работы с ними
+from View import *
+
+def addition(num_1, num_2):
+    addition = num_1 + num_2
+    print(addition)
+
+def subtraction(num_1, num_2):
+    subtraction = num_1 - num_2
+    print(subtraction)
+
+def multiplication(num_1, num_2):
+    multiplication = num_1 * num_2
+    print(multiplication)
+
+def division(num_1, num_2):
+    division = num_1 / num_2
+    print(div
